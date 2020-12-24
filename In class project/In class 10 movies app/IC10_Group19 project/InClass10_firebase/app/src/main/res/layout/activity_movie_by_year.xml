@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieByYear">
+
+    <TextView
+        android:id="@+id/txtName_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescription_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/description"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName_YEAR" />
+
+    <TextView
+        android:id="@+id/editDescription_YEAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:scrollbars="vertical"
+        android:maxLength="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription_YEAR"
+        />
+
+    <TextView
+        android:id="@+id/txtGenre_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Genre"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription_YEAR" />
+
+    <TextView
+        android:id="@+id/txtRating_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/rating"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGenre_YEAR" />
+
+    <TextView
+        android:id="@+id/txtYear_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/year"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRating_YEAR" />
+
+    <TextView
+        android:id="@+id/txtImdb_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/IMDB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtYear_YEAR" />
+
+    <TextView
+        android:id="@+id/txtGenreValue_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toEndOf="@+id/txtGenre_YEAR"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription_YEAR" />
+
+    <TextView
+        android:id="@+id/txtRatingValue_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toEndOf="@+id/txtRating_YEAR"
+        app:layout_constraintTop_toBottomOf="@+id/txtGenreValue_YEAR" />
+
+    <TextView
+        android:id="@+id/txtYearValue_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toEndOf="@+id/txtYear_YEAR"
+        app:layout_constraintTop_toBottomOf="@+id/txtRatingValue_YEAR" />
+
+    <TextView
+        android:id="@+id/txtNameValue_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toEndOf="@+id/txtName_YEAR"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIMDBValue_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtImdb_YEAR" />
+
+    <Button
+        android:id="@+id/btnFinish_YEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/finish"
+        app:layout_constraintStart_toEndOf="@+id/imgPrevious_YEAR"
+        app:layout_constraintTop_toBottomOf="@+id/txtIMDBValue_YEAR" />
+
+    <ImageView
+        android:id="@+id/imgFirst_YEAR"
+        android:layout_width="65dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPrevious_YEAR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIMDBValue_YEAR"
+        app:srcCompat="@drawable/first" />
+
+    <ImageView
+        android:id="@+id/imgPrevious_YEAR"
+        android:layout_width="65dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnFinish_YEAR"
+        app:layout_constraintTop_toBottomOf="@+id/txtIMDBValue_YEAR"
+        app:srcCompat="@drawable/previous" />
+
+    <ImageView
+        android:id="@+id/imgNext_YEAR"
+        android:layout_width="65dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/btnFinish_YEAR"
+        app:layout_constraintTop_toBottomOf="@+id/txtIMDBValue_YEAR"
+        app:srcCompat="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/imgLast_YEAR"
+        android:layout_width="43dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgNext_YEAR"
+        app:layout_constraintTop_toBottomOf="@+id/txtIMDBValue_YEAR"
+        app:srcCompat="@drawable/last" />
+
+    <TextView
+        android:id="@+id/txtYearHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNameValue_YEAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

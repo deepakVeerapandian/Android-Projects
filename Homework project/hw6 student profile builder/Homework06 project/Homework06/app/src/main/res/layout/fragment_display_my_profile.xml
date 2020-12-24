@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayMyProfile"
+    android:id="@+id/frage">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imgDisplayProfile"
+        android:layout_width="212dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="56dp"
+        android:src="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtDP_name"
+        android:layout_width="112dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplayProfile" />
+
+    <TextView
+        android:id="@+id/txtDP_val_dept"
+        android:layout_width="158dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="224dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplayProfile" />
+
+    <TextView
+        android:id="@+id/txtDP_val_studentId"
+        android:layout_width="162dp"
+        android:layout_height="34dp"
+        android:textSize="20sp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplayProfile" />
+
+    <TextView
+        android:id="@+id/txtDP_val_FullName"
+        android:layout_width="182dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="88dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplayProfile" />
+
+    <TextView
+        android:id="@+id/txtDp_dept"
+        android:layout_width="112dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="224dp"
+        android:text="@string/dept"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplayProfile" />
+
+    <TextView
+        android:id="@+id/txtDP_studentId"
+        android:layout_width="112dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="156dp"
+        android:text="@string/studentid"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplayProfile" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDp_dept" />
+</androidx.constraintlayout.widget.ConstraintLayout>

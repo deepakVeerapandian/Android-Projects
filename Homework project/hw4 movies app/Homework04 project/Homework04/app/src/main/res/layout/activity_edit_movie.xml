@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditMovieActivity">
+
+    <TextView
+        android:id="@+id/txtName_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editMovieName_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toEndOf="@+id/txtName_EDIT"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescription_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/description"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName_EDIT" />
+
+    <EditText
+        android:id="@+id/editDescription_EDIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLength="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription_EDIT" />
+
+    <TextView
+        android:id="@+id/txtGenre_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Genre"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription_EDIT" />
+
+    <Spinner
+        android:id="@+id/spinnerGenre_EDIT"
+        android:layout_width="202dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toEndOf="@+id/txtGenre_EDIT"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription_EDIT" />
+
+    <TextView
+        android:id="@+id/txtRating_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/rating"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGenre_EDIT" />
+
+    <SeekBar
+        android:id="@+id/seekBarRating_EDIT"
+        android:layout_width="215dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toEndOf="@+id/txtRating_EDIT"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGenre_EDIT" />
+
+    <TextView
+        android:id="@+id/txtYear_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/year"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRating_EDIT" />
+
+    <EditText
+        android:id="@+id/editYear_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtYear_EDIT"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarRating_EDIT" />
+
+    <TextView
+        android:id="@+id/txtImdb_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/IMDB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtYear_EDIT" />
+
+    <EditText
+        android:id="@+id/editImdb_EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtImdb_EDIT"
+        app:layout_constraintTop_toBottomOf="@+id/editYear_EDIT" />
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/saveChanges"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editImdb_EDIT" />
+
+    <TextView
+        android:id="@+id/txtRatingValue_EDIT"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBarRating_EDIT"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGenre_EDIT" />
+</androidx.constraintlayout.widget.ConstraintLayout>

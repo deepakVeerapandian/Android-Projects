@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Homework 01</string>
+    <string name="Body_mass_index">Body Mass Index (BMI)</string>
+    <string name="Weight">Weight</string>
+    <string name="lb">lb</string>
+    <string name="Height">Height</string>
+    <string name="feet">feet</string>
+    <string name="inches">inches</string>
+    <string name="calculate">Calculate BMI</string>
+    <string name="your_bmi">Your BMI :</string>
+</resources>

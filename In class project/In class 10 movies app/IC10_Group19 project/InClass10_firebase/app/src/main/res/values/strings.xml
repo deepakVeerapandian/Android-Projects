@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">InClass10_firebase</string>
+    <string name="addButton">Add Movie</string>
+    <string name="edit">Edit</string>
+    <string name="deleteMovie">Delete Movie</string>
+    <string name="showListByYear">Show List By Year</string>
+    <string name="showListByRating">Show List By Rating</string>
+    <string name="Name">Name : </string>
+    <string name="description">Description : </string>
+    <string name="Genre">Genre :</string>
+    <string name="rating">Rating : </string>
+    <string name="year">Year : </string>
+    <string name="IMDB">IMDB :</string>
+    <string name="addMovie">Add Movie</string>
+    <string name="saveChanges">Save Changes</string>
+    <string name="finish">Finish</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InClass02</string>
+    <string name="Length1">Length 1:</string>
+    <string name="Length2">Length 2:</string>
+    <string name="selectShape">Select a shape</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">801100869_Midterm</string>
+    <string name="headingMain">Please select the city from the list below :</string>
+    <string name="temp">Temperature</string>
+    <string name="tempMax">Temperature Max</string>
+    <string name="tempMin">Temperature Min</string>
+    <string name="desc">Description</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind Speed</string>
+    <string name="forecast">Forecast</string>
+</resources>

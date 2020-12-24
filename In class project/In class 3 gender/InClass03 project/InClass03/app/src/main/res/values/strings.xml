@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InClass03</string>
+    <string name="Name">Name : </string>
+    <string name="txtNameValue">txtNameValue</string>
+    <string name="gender">Gender</string>
+    <string name="Edit">Edit</string>
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Select_gender">Select Gender</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Save">Save</string>
+</resources>

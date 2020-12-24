@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical" android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--</LinearLayout>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/trackname"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTrackNameValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:autoSizeTextType="uniform"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/txtTrack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/artistname"
+        app:layout_constraintEnd_toStartOf="@+id/txtArtistNameValue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtArtistNameValue"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:autoSizeTextType="uniform"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/album"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAlbumValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoSizeTextType="uniform"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/txtTrackNameValue" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtDateValue" />
+
+    <TextView
+        android:id="@+id/txtDateValue"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoSizeTextType="uniform"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtArtistNameValue" />
+</androidx.constraintlayout.widget.ConstraintLayout>
