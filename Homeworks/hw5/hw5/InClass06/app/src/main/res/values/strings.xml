@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InClass06</string>
+    <string name="limit">Limit : 0</string>
+    <string name="search">Search</string>
+    <string name="track">Track rating</string>
+    <string name="artist">Artist Rating</string>
+    <string name="sortBy">Sort By : </string>
+    <string name="searchResult">Search results</string>
+    <string name="trackname">Track Name :</string>
+</resources>

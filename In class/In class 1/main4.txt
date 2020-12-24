@@ -1,0 +1,84 @@
+package inc1;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MainPart4 {
+
+	public static void main(String[] args) 
+	{
+		HashMap<Integer,ArrayList<StoreItem>> itemsHashMap = new HashMap<Integer,ArrayList<StoreItem>>();
+		HashMap<Integer,ArrayList<Shoppingcart>> cartHashMap = new HashMap<Integer,ArrayList<Shoppingcart>>();
+		
+		for(String items : Data.items)
+		{			
+			String [] elements = items.split(",");
+			String name = elements[0].trim();
+			int id = Integer.parseInt(elements[1].trim());
+			int price = Integer.parseInt(elements[2].trim());
+			
+			ArrayList<StoreItem> itemList = new ArrayList<StoreItem>();
+			itemList.add(new StoreItem ( name, id, price));
+			itemsHashMap.put(id, itemList);
+			
+		}
+		for(String items : Data.shoppingCart)
+		{			
+			String [] elements = items.split(",");
+			int id = Integer.parseInt(elements[0].trim());
+			int quantity = Integer.parseInt(elements[1].trim());
+			
+			ArrayList<Shoppingcart> cartList = new ArrayList<Shoppingcart>();
+			cartList.add(new Shoppingcart ( id, quantity));
+			cartHashMap.put(id, cartList);
+		}
+		
+		System.out.println(" ID     Name        Quantity      Quantity*Price");
+
+		int total = 0;
+		for(Map.Entry<Integer,ArrayList<StoreItem>> itemEntry : itemsHashMap.entrySet())
+		{
+			ArrayList<StoreItem> itemList = new ArrayList<StoreItem>();
+			itemList = itemEntry.getValue();
+			for(Map.Entry<Integer,ArrayList<Shoppingcart>> cartEntry : cartHashMap.entrySet())
+			{
+				ArrayList<Shoppingcart> cartList = new ArrayList<Shoppingcart>();
+				cartList = cartEntry.getValue();
+
+				if(itemEntry.getKey().equals(cartEntry.getKey()))
+				{
+					System.out.println(itemEntry.getKey() + "\t" + itemList.get(0).name + "     \t " + cartList.get(0).quantity +
+							"      \t $" + ((itemList.get(0).price)*(cartList.get(0).quantity)) );
+					total = total + ((itemList.get(0).price)*(cartList.get(0).quantity));
+				}
+			}
+		}
+		System.out.println("Total : $" + total);
+	
+	}
+}
+
+class StoreItem {
+	String name;
+	int id;
+	int price;
+	
+	public StoreItem (String name,int id,int price)
+	{
+		this.name = name;
+		this.id = id;
+		this.price = price;
+	}
+}
+
+class Shoppingcart {
+	int id;
+	int quantity;
+	
+	public Shoppingcart (int id,int quantity)
+	{
+		this.id = id;
+		this.quantity = quantity;
+	}
+}

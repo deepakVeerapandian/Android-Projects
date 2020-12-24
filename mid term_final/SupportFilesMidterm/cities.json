@@ -1,0 +1,50 @@
+{
+  "version": "0.1",
+  "details": "Import into the project and read the data",
+  "data": [
+    {
+      "city": "Charlotte",
+      "country": "US"
+    },
+    {
+      "city": "Chicago",
+      "country": "US"
+    },
+    {
+      "city": "New York",
+      "country": "US"
+    },
+    {
+      "city": "Miami",
+      "country": "US"
+    },
+    {
+      "city": "San Fracisco",
+      "country": "US"
+    },
+    {
+      "city": "London",
+      "country": "UK"
+    },
+    {
+      "city": "Bristol",
+      "country": "UK"
+    },
+    {
+      "city": "Cambridge",
+      "country": "UK"
+    },
+    {
+      "city": "Liverpool",
+      "country": "UK"
+    },
+    {
+      "city": "Toronto",
+      "country": "CA"
+    },
+    {
+      "city": "Vancouver",
+      "country": "CA"
+    }
+  ]
+}
